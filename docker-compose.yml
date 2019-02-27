@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  irpf:
+  irpf_br:
     image: leandro2r/irpf_br
     network_mode: host
     environment:
@@ -10,4 +10,5 @@ services:
       - TZ=America/Sao_Paulo
       - VERSAO=1.0
     volumes:
-      - ./ProgramasRFB:/root/ProgramasRFB        
+      - ./ProgramasRFB:/root/ProgramasRFB
+

@@ -18,6 +18,8 @@ WORKDIR /tmp
 
 COPY startup.sh .
 
-RUN chmod +x startup.sh
+RUN apk del \
+    bash \
+    gzip
 
 CMD ["./startup.sh"]

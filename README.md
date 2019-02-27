@@ -19,6 +19,14 @@ As variáveis de ambientes declaradas a seguir são referentes ao ano/zip que se
 
 ### Command
 
+1. Add X11 authority
+
+```shell
+$ xhost + local:docker
+```
+
+2. Execute docker-compose file
+
 ```shell
 $ docker-compose up -d
 ```

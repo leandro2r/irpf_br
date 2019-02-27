@@ -1,13 +1,14 @@
 #!/bin/sh
 
-IRPF_ZIP=IRPF${ANO}-${VERSAO}.zip
+set -e
 
-if [ ! -s "/tmp/$IRPF_ZIP" ]; then
-	echo Dowloading IRPF$ANO ${IRPF_ZIP}...
-	wget http://downloadirpf.receita.fazenda.gov.br/irpf/$ANO/irpf/arquivos/$IRPF_ZIP -P /tmp
-fi
+IRPF_ZIP=${IRPF_ZIP:-IRPF${ANO}-${VERSAO}.zip}
 
-if [ ! -d "/tmp/IRPF$ANO" ]; then
+wget -q --show-progress -c \
+http://downloadirpf.receita.fazenda.gov.br/irpf/$ANO/irpf/arquivos/$IRPF_ZIP \
+-P /tmp
+
+if [ ! -s "/tmp/IRPF${ANO}/irpf.jar" ]; then
 	unzip /tmp/$IRPF_ZIP -d /tmp 1> /dev/null
 fi
 
