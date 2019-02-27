@@ -1,7 +1,7 @@
 FROM anapsix/alpine-java:8_jdk
 
 ARG ANO=2019
-ARG IRPF_ZIP=IRPF2019-1.0.zip
+ARG VERSAO=1.0
 
 ENV TZ=America/Sao_Paulo
 ENV DISPLAY=:0

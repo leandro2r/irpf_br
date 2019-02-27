@@ -12,8 +12,10 @@ As variáveis de ambientes declaradas a seguir são referentes ao ano/zip que se
 
 ```
 - ANO=2019
-- IRPF_ZIP=IRPF2019-1.0.zip
+- VERSAO=1.0
 ``` 
+
+**PS.:** A versão pode ser encontrada no próprio nome do arquivo `IRPF<ANO>-<VERSAO>.zip` baixado da [RFB 2019 Multiplataforma (zip)](http://receita.economia.gov.br/interface/cidadao/irpf/2019/download/multiplataforma-zip).
 
 ### Command
 

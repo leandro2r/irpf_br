@@ -1,6 +1,8 @@
 #!/bin/sh
 
-if [ ! -s "/tmp/$IRPF_FILE" ]; then
+IRPF_ZIP=IRPF${ANO}-${VERSAO}.zip
+
+if [ ! -s "/tmp/$IRPF_ZIP" ]; then
 	echo Dowloading IRPF$ANO ${IRPF_ZIP}...
 	wget http://downloadirpf.receita.fazenda.gov.br/irpf/$ANO/irpf/arquivos/$IRPF_ZIP -P /tmp
 fi
