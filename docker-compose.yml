@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  irpf:
+    image: leandro2r/irpf_br
+    network_mode: host
+    environment:
+      - ANO=2019
+      - DISPLAY=:0
+      - IRPF_ZIP=IRPF2019-1.0.zip
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./ProgramasRFB:/root/ProgramasRFB        
