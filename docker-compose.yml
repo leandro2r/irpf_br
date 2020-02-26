@@ -5,7 +5,7 @@ services:
     image: leandro2r/irpf_br
     network_mode: host
     environment:
-      - ANO=2019
+      - ANO=2020
       - DISPLAY=:0
       - TZ=America/Sao_Paulo
       - VERSAO=1.0
