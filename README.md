@@ -25,13 +25,6 @@ As variáveis de ambientes declaradas a seguir são referentes ao ano/zip que se
 $ xhost + local:docker
 ```
 
-Ou adicionando ao arquivo `/etc/lightdm/lightdm.conf`.
-
-```
-[SeatDefaults]
-display-setup-script=xhost + local:docker
-```
-
 2. Executar docker-compose file
 
 ```shell
