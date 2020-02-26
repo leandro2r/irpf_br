@@ -17,15 +17,16 @@ As variáveis de ambientes declaradas a seguir são referentes ao ano/zip que se
 
 **PS.:** A versão pode ser encontrada no próprio nome do arquivo zip `IRPF<ANO>-<VERSAO>.zip` disponível em [RFB 2019 Multiplataforma (zip)](http://receita.economia.gov.br/interface/cidadao/irpf/2019/download/multiplataforma-zip).
 
-### Command
+### Instalação/Execução
 
-1. Add X11 authority
+1. Criar/Adicionar ao arquivo `/etc/lightdm/lightdm.conf` com autorização ao xhost.
 
-```shell
-$ xhost + local:docker
+```
+[SeatDefaults]
+display-setup-script=xhost + local:docker
 ```
 
-2. Execute docker-compose file
+2. Executar docker-compose file
 
 ```shell
 $ docker-compose up -d
