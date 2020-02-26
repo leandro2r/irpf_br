@@ -19,7 +19,13 @@ As variáveis de ambientes declaradas a seguir são referentes ao ano/zip que se
 
 ### Instalação/Execução
 
-1. Criar/Adicionar ao arquivo `/etc/lightdm/lightdm.conf` com autorização ao xhost.
+1. Adicionar autorização ao xhost (X11) à partir do comando.
+
+```shell
+$ xhost + local:docker
+```
+
+Ou adicionando ao arquivo `/etc/lightdm/lightdm.conf`.
 
 ```
 [SeatDefaults]
