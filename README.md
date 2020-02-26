@@ -11,7 +11,7 @@ A fim de evitar a criação de várias imagens que acompanhem as versões lança
 As variáveis de ambientes declaradas a seguir são referentes ao ano/zip que serão utilizados no container. Para esta primeira versão da imagem `leandro2r/irpf_br` os valores default foram 2019 e 1.0.
 
 ```
-- ANO=2019
+- ANO=2020
 - VERSAO=1.0
 ``` 
 
